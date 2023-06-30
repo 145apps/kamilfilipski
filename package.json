@@ -1,0 +1,14 @@
+{
+  "name": "myapps",
+  "version": "1.0.0",
+  "main": "hello.js",
+  "author": "The Webapps Organization",
+  "license": "MIT",
+  "dependencies": {
+    "cookies": "^0.8.0",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "idgen": "^2.1.0",
+    "nedb": "^1.8.0"
+  }
+}

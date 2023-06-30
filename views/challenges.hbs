@@ -1,0 +1,100 @@
+<main class="_challenges margin-bottom--120">
+
+    <section class="entrance background--007EE7-03A0F3">
+        <div class="view--grid grid-template-columns--80rem justify--center">
+            <div class="padding-top--140 padding-right--40 padding-bottom--40 padding-left--40">
+                <div class="view--grid grid-template-columns---125FR-1FR-125FR">
+
+                    <div class="introduction">
+                        <div>
+                            <p class="text-size--36 text-weight--500 text-line-height--145 text-color--FFFFFF">Challenges</p>
+                            <div class="margin-top--10">
+                                <ul class="view--grid grid-template-columns--3XY grid-gap---65rem align--center justify--start">
+                                    <li>
+                                        <a class="text-weight--300 text-color--FFFFFF" href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <p class="text-weight--300 text-color--FFFFFF">/</p>
+                                    </li>
+                                    <li>
+                                        <p class="text-weight--300 text-color--FFFFFF">Challenges</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+          
+    <section class="challenges margin-top--80">
+        <div class="view--grid grid-template-columns--80rem justify--center">
+            <div class="padding-right--40 padding-left--40">
+
+                <div class="introduction">
+                    <div>
+                        <div class="view--grid grid-template-columns--2XY grid-gap---125rem justify--start">
+                            <div>
+                                <p class="text-size--20 text-weight--500 opacity--10" data-sort="in-progress">In progress (1)</p>
+                            </div>
+                            <div>
+                                <p class="text-size--20 text-weight--500 opacity--4" data-sort="completed">Completed (25)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion margin-top--25">
+                    <div>
+                        <div class="view--grid grid-template-columns--3FR grid-gap---175rem">
+                            {{#each challenges}}
+                                <div>
+                                    <div class="padding-top--20 padding-right--20 padding-bottom--20 padding-left--20 border--EBEBEB border-radius--10">
+                                        <div>
+                                            <div class="view--grid">
+                                                <div>
+                                                    <div class="posture--relative">
+                                                        <div>
+                                                            <img width="100%" height="200" class="object--cover border-radius--10" src="{{picture}}" alt="Community - {{name}}">
+                                                        </div>
+                                                        <div>
+                                                            <div class="posture--absolute top--10 right--10 padding-top--5 padding-right--10 padding-bottom--5 padding-left--10 background--00000063 border-radius--10">
+                                                                <div>
+                                                                    <div class="text-size--12 text-weight--500 text-color--FFFFFF">£{{cash}}</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="margin-top--20">
+                                                    <div>
+                                                        <p class="text-size--18 text-weight--500">{{name}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="margin-top--10">
+                                                    <div>
+                                                        <p class="text-size--14 text-line-height--165">{{describe}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="margin-top--20">
+                                                    <div>
+                                                        <p class="text-size--14"><open-challenge class="text-color--007EE7" data-challange="{{name}}" data-picture="{{picture}}">Complete</open-challenge> the task and earn</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        {{!-- <p>There are no tasks</p> --}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
